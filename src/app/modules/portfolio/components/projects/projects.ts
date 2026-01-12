@@ -16,17 +16,17 @@ export class Projects {
 
   public arrayProjects = signal<IProjects[]>([
     {
-      src: 'assets/img/projects/vfull.png',
+      src: 'assets/img/projects/portfolio1.png',
       alt: 'Projeto Vida FullStack',
-      title: 'Vida FullStack',
-      with: '100px',
+      title: 'Portfolio',
+      with: '80px',
       height: '51px',
       description:
-        '<p>Explore o fascinante mundo do desenvolvimento web no meu blog dedicado exclusivamente ao ecossistema Angular, Front-end, JavaScript, Node.js e TypeScript.</p> <p>Desvende os segredos por trás da construção de interfaces modernas, aprimore suas habilidades de programação front-end quanto back-end e mergulhe em conceitos avançados de JavaScript e TypeScript.</p>',
+        '<p>Venha conferir um dos meus primeiros portfólios.</p>',
       links: [
         {
-          name: 'Conheça o Blog',
-          href: 'https://vidafullstack.com.br',
+          name: 'Conheça o Portfolio',
+          href: 'https://renanrlopes.infinityfree.me/curriculo.html',
         },
       ],
     },
