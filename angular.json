@@ -23,13 +23,18 @@
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": ["src/favicon.ico", "src/assets"],
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
             "styles": [
               "src/styles.scss"
             ]
           },
           "configurations": {
             "production": {
+              "baseHref": "/curso-angular-portfolio/",
+              "deployUrl": "/curso-angular-portfolio/",
               "budgets": [
                 {
                   "type": "initial",
@@ -66,6 +71,9 @@
         },
         "test": {
           "builder": "@angular/build:unit-test"
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
