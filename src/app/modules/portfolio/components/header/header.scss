@@ -25,9 +25,45 @@
     }
 
     aside {
-        p {
+
+        /* =========================
+           DESCRIÇÃO (HARMONIZADA)
+        ========================== */
+        .about {
+            margin-top: 12px;
+            padding: 16px 18px;
+            border-radius: 10px;
+
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+
             text-align: center;
         }
+
+        .about h2 {
+            margin-bottom: 4px;
+        }
+
+        .about .tags {
+            display: block;
+            margin-bottom: 4px;
+            color: var(--primary);
+            font-weight: 500;
+        }
+
+        .about .location {
+            display: block;
+            margin-bottom: 10px;
+            color: var(--secondary);
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        .about .description {
+            margin: 0;
+            line-height: 1.6;
+        }
+        /* ========================= */
 
         nav ul,
         section {
@@ -97,6 +133,10 @@
         aside nav ul li a,
         section figure {
             width: 100%;
+        }
+
+        .about {
+            padding: 14px;
         }
     }
 }
