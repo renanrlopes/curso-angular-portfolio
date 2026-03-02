@@ -4,7 +4,8 @@
     <ul class="knowledge-list">
         @for(item of arrayKnowledge(); track item){
         <li>
-            <img [src]="item.src" [alt]="item.alt" loading="lazy" />
+            <img [src]="item.src" [alt]="item.alt" [title]="item.label" loading="lazy" />
+            <span>{{ item.label }}</span>
         </li>
         }
     </ul>

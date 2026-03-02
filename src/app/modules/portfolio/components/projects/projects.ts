@@ -30,6 +30,21 @@ export class Projects {
         },
       ],
     },
+    {
+      src: 'assets/img/projects/lista-de-tarefas.png',
+      alt: 'Projeto Lista de Tarefas',
+      title: 'Lista de Tarefas',
+      with: '80px',
+      height: '51px',
+      description:
+        '<p>Aplicação de lista de tarefas desenvolvida com Angular. Permite adicionar, concluir e remover tarefas de forma prática.</p>',
+      links: [
+        {
+          name: 'Ver no GitHub',
+          href: 'https://github.com/renanrlopes',
+        },
+      ],
+    },
   ]);
 
   public openDialog(data: IProjects) {
