@@ -15,20 +15,22 @@
 
     ul {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(56px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
         gap: 14px;
 
-        max-width: 320px;
+        max-width: 400px;
         margin: 0 auto;
         padding: 0;
 
         li {
-            width: 56px;
-            height: 56px;
+            width: 70px;
+            height: 80px;
 
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
+            gap: 6px;
 
             background: rgba(255, 255, 255, 0.03);
             border: 1px solid rgba(255, 255, 255, 0.06);
@@ -45,10 +47,21 @@
                 filter: brightness(0.95);
             }
 
+            span {
+                font-size: 11px;
+                color: var(--grey);
+                text-align: center;
+                line-height: 1.2;
+            }
+
             &:hover {
                 transform: translateY(-3px);
                 background: rgba(52, 211, 153, 0.08);
                 border-color: var(--primary);
+
+                span {
+                    color: var(--primary);
+                }
             }
         }
     }
